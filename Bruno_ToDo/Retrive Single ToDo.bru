@@ -1,0 +1,19 @@
+meta {
+  name: Retrive Single ToDo
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://127.0.0.1:8888/api/v1/todo/2/
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyMTYxNjQ1LCJpYXQiOjE3NDIxNTgwNDUsImp0aSI6IjA5NTFmNDNiYjRjZTRkMjk4ZGUwZTJjZDNjZDg4ZWI4IiwidXNlcl9pZCI6MSwiYXVkIjoiVXNlcnMiLCJpc3MiOiJUb0RvIn0.3-bve6IKmRo_d_CwQuQ3yozzPWYf4JB-84Eilr8A7gM
+}
+
+body:multipart-form {
+  title: Testing
+}

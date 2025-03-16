@@ -1,0 +1,23 @@
+meta {
+  name: Login
+  type: http
+  seq: 5
+}
+
+post {
+  url: 127.0.0.1:8888/api/v1/users/login/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "Hushmkun@outlook.com",
+    "password": "Ahahahah"
+  }
+}
+
+script:post-response {
+  bru.setEnvVar('jwt_token',res.body.access);
+  
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Delete Single ToDo
+  type: http
+  seq: 11
+}
+
+delete {
+  url: http://127.0.0.1:8888/api/v1/todo/1005/
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQyMTUxNDM5LCJpYXQiOjE3NDIxNDc4MzksImp0aSI6IjcyYTA5YjhlNGE4YzRmOTA4YjMwZDYzMTJhNmNlYTAzIiwidXNlcl9pZCI6MSwiYXVkIjoiVXNlcnMiLCJpc3MiOiJUb0RvIn0.ItZ2Bi1vcGkZR1z6dpdb-EBbgKGDzP0Ts9th1g4No80
+}
+
+body:multipart-form {
+  title: Testing 12
+}

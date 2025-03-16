@@ -1,0 +1,17 @@
+meta {
+  name: Request Reset
+  type: http
+  seq: 3
+}
+
+post {
+  url: 127.0.0.1:8888/api/v1/users/send_reset/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "Hushmkun@outlook.com"
+  }
+}

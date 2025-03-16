@@ -1,0 +1,22 @@
+meta {
+  name: Register
+  type: http
+  seq: 2
+}
+
+post {
+  url: 127.0.0.1:8888/api/v1/users/register/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "first_name":"Ahmed",
+    "email": "Ahmed@haha.com",
+    "last_name":"Farouk",
+    "password": "HaHa_Joker_i5_d3ad",
+    "password2":"HaHa_Joker_i5_d3ad",
+    "DoB": "25/01/2002"
+  }
+}
